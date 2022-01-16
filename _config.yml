@@ -2,19 +2,19 @@
 #
 # bootstrap-template
 # basic bootstrap template for Jekyll with GitHub Pages
-# https://github.com/thecdil/bootstrap-template
+# https://antheao.github.io/Bulbshare-sandbox/
 #
 #######
 
 #######
 # SITE SETTINGS
 #
-title: bootstrap-template
+title: Bulbshare Review Landing Page
 description: "a basic bootstrap template for Jekyll with GitHub Pages"
 year: 2020
-author: evan will 
+author: anthea o'neill
 # add search box to navbar, true/false
-search: true
+search: false
 
 ##########
 # URL VARIABLES [optional!]
