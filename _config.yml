@@ -11,8 +11,8 @@
 #
 title: Bulbshare Review Landing Page
 description: "a basic bootstrap template for Jekyll with GitHub Pages"
-year: 2020
-author: anthea o'neill
+year: 2022
+author: AntheaO
 # add search box to navbar, true/false
 search: false
 
@@ -29,7 +29,7 @@ url:
 # baseurl is your github repository's name prefixed with a /
 baseurl:
 # location of code, the full url to your github repository
-source-code: https://github.com/thecdil/bootstrap-template
+source-code: https://github.com/AntheaO/Bulbshare-sandbox
 
 ##########
 # GOOGLE ANALYTICS [optional!]
