@@ -1,1 +1,72 @@
-/* add your scss tweaks here */
+/* scss tweaks here */
+
+.btn {
+    background-color: $btn-bg; 
+    color: $btn-txt-color;
+    padding: 12px 2em;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    -webkit-transition: box-shadow 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 5em !important;        
+}
+.hero-inner-padding {
+    padding-top: 125px;
+    padding-bottom: 80px;
+}
+h1.cta {
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 49px;
+}
+.blue {
+  color: $blue-txt;
+}
+.yellow { color: #FFE802}
+.jumbotron {
+    background: linear-gradient(169.35deg, #0669E6 6.42%, #33C1DB 93.23%, #33C1DB 93.58%);
+  }
+
+  // Full width gradient container
+  .bg-gradient {
+    background: linear-gradient(169.35deg, #0669E6 6.42%, #33C1DB 93.23%, #33C1DB 93.58%);
+  }
+  .bg-gradient-cta {
+    background: linear-gradient(169.35deg, #0669E6 6.42%, #33C1DB 93.23%, #33C1DB 93.58%);
+  }
+
+  // Gradient grids 
+
+  .green-grid-col {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    margin-bottom: .25rem;
+    background-color: #35D6D8;
+    border-radius: 30px;
+  }
+  .blue-grid-col {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    margin-bottom: .25rem;    
+    background: linear-gradient(164.89deg, #0669E6 7.76%, #35D6D8 91.9%, #35D6D8 92.24%);
+    border-radius: 30px;    
+  }
+
+
+  // list groups
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }

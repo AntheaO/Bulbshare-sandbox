@@ -22,13 +22,13 @@
     background-position: center;
 }
 </style>{% endif %}
+
 <div class="jumbotron" id="jumbotron-feature">
     <div class="container">
-        {% if include.title %}<h1 class="display-3">{{ include.title | markdownify }}</h1>{% endif %}
-        {% if include.lead %}<p class="lead">{{ include.lead | markdownify }}</p>{% endif %}
-        {% if include.text %}<p>{{ include.text | markdownify }}</p>{% endif %}
+        <p>HARNESS THE POWER OF</p>
+        {% if include.title %}<h1 class="display-3">User-Generated Reviews</h1>{% endif %}
+        <p>Revolutionise your marketing with the built-in authenticity of user-generated content.</p>
         {% if include.btn-link %}<a class="btn btn-primary btn-lg" href="{{ include.btn-link }}">{{ include.btn-text }}</a>{% endif %}
-        <h1><em>Hello world</em></h1>
     </div>
 </div>
 

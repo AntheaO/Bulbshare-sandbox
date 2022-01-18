@@ -7,7 +7,19 @@
         <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
         {% include template/header.html %}
         <main id="maincontent" role="main" aria-label="Content" class="mb-4 flex-shrink-0">
-        {{ content }}
+            {{ content }}
+
+            <div class="px-4 text-center">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="display-5 fw-bold">The power of customer advocacy: driving authenticity for your brand</h2>
+                </div>  
+            </div>
+
+            {% include hero.html %}
+            {% include two-col-feature.html %}
+            {% include CTA.html %}  
+            {% include progress-bar.html %} 
+            {% include CTA.html %}           
         </main>
         {% include template/footer.html %}
         {% include template/foot.html %}

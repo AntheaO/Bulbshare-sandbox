@@ -3,9 +3,12 @@
 ---
 @charset "utf-8";
 
-/* Optionally tweak base body text and link color */
-$text-color: #111 !default;
-$link-color: #2a7ae2 !default;
+/* Color variables */
+$text-color: #393A3A !default;
+$link-color: #015FE7 !default;
+$btn-bg: #FFE802 !default;
+$btn-txt-color: #000000 !default;
+$blue-txt:#015FE7 !default;
 
 /* Set contain-narrow size for page-narrow layout */
 $container-narrow: 700px;
@@ -33,5 +36,5 @@ $theme-colors: map-merge(
 
 // Import partials.
 @import
-  "theme-colors", "template", "custom"
+  "theme-colors", "template", "list-groups",  "custom"
 ;
