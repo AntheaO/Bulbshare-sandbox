@@ -48,19 +48,20 @@ a {
     line-height: 22px;    
 }
 .hero-inner-padding {
-    padding-top: 125px;
-    padding-bottom: 80px;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'gilroyextrabold';
   font-weight: 800;
 }
 h1.cta {
+  font-family: 'gilroyextrabold'; 
   color: #ffffff;
   margin-bottom: 40px;
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 49px;
 }
 
@@ -103,7 +104,20 @@ h1.cta {
   .bg-gradient-cta {
     background: linear-gradient(169.35deg, #0669E6 6.42%, #33C1DB 93.23%, #33C1DB 93.58%);
   }
-
+  .bg-gradient-cta:before {
+    max-width: 1140px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    top: 40px;
+    bottom: -20px;
+    width: 100%;
+    background: url(/assets/img/Group9.png) no-repeat center bottom;
+    background-size: cover;
+    z-index: 0;
+  }
   // Gradient grids 
 
   .green-grid-col {
@@ -180,4 +194,38 @@ h1.cta {
     mask-position:left center;
     mask-repeat:no-repeat;
     mask-size: 400px 350px;
+}
+
+ // footer
+.align-right {
+  text-align: right;
+}
+.center-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+ul.nav li {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+
+color: #3C3C47;
+}
+.vertical-middle {
+  vertical-align: middle;
+}
+.copyright {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #3C3C47;
 }
