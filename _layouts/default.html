@@ -4,18 +4,11 @@
         {% include template/head.html %}
     </head>
     <body class="d-flex flex-column h-100">
-        <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
         {% include template/header.html %}
         <main id="maincontent" role="main" aria-label="Content" class="mb-4 flex-shrink-0">
             {{ content }}
 
-            <div class="px-4 text-center">
-                <div class="col-lg-6 mx-auto">
-                    <h2 class="display-5 fw-bold">The power of customer advocacy: driving authenticity for your brand</h2>
-                </div>  
-            </div>
-
-            {% include hero.html %}
+            {% include intro.html %}
             {% include two-col-feature.html %}
             {% include how-it-works.html %}
             {% include CTA.html %}  

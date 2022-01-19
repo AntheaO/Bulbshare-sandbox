@@ -1,5 +1,37 @@
 /* scss tweaks here */
 
+@font-face {
+  font-family: 'gilroyextrabold';
+  src: url('/assets/img/fonts/gilroy-extrabold-webfont.eot');
+  src: url('/assets/img/fonts/gilroy-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/img/fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+       url('/assets/img/fonts/gilroy-extrabold-webfont.woff') format('woff'),
+       url('/assets/img/fonts/gilroy-extrabold-webfont.ttf') format('truetype'),
+       url('/assets/img/fonts/gilroy-extrabold-webfont.svg#gilroyextrabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gilroylight';
+  src: url('/assets/img/fonts/gilroy-light-webfont.eot');
+  src: url('/assets/img/fonts/gilroy-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/img/fonts/gilroy-light-webfont.woff2') format('woff2'),
+       url('/assets/img/fonts/gilroy-light-webfont.woff') format('woff'),
+       url('/assets/img/fonts/gilroy-light-webfont.ttf') format('truetype'),
+       url('/assets/img/fonts/gilroy-light-webfont.svg#gilroylight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'gilroylight';
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
 .btn {
     background-color: $btn-bg; 
     color: $btn-txt-color;
@@ -8,11 +40,20 @@
     letter-spacing: .05em;
     -webkit-transition: box-shadow 0.2s ease-in-out;
     transition: box-shadow 0.2s ease-in-out;
-    border-radius: 5em !important;        
+    border-radius: 5em !important;    
+    font-family: 'gilroylight';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;    
 }
 .hero-inner-padding {
     padding-top: 125px;
     padding-bottom: 80px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'gilroyextrabold';
+  font-weight: 800;
 }
 h1.cta {
   color: #ffffff;
@@ -22,12 +63,37 @@ h1.cta {
   font-size: 30px;
   line-height: 49px;
 }
+
+.intro h1.fw-bold {
+  font-family: 'gilroyextrabold';
+  font-weight: 800;
+  color: #000000;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+}
+.intro h2.fw-bold {
+  font-family: 'gilroyextrabold';
+  font-style: normal;
+  font-weight: 800;
+  color: #393A3A;
+  font-size: 40px;
+  line-height: 49px;
+  margin-top: 55px;
+}
+
 .blue {
   color: $blue-txt;
 }
 .yellow { color: #FFE802}
+
 .jumbotron {
     background: linear-gradient(169.35deg, #0669E6 6.42%, #33C1DB 93.23%, #33C1DB 93.58%);
+    position: relative;
+    height: 100vh;
+    min-height: 650px;
+    max-height: 1200px;
   }
 
   // Full width gradient container
@@ -55,15 +121,43 @@ h1.cta {
     border-radius: 30px;    
   }
 
+  .green-grid-col p, .blue-grid-col p {
+    font-family: 'gilroylight';
+    font-style: normal;
+    font-weight:300;
+    font-size: 12px;
+    line-height: 13.84px;
+  }
+  .green-grid-col h2, .blue-grid-col h2 {
+    font-family: 'gilroyextrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .green-grid-col h5, .blue-grid-col h5 {
+    font-family: 'gilroyextrabold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 15px;
+  }
 
   // list groups
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+  .list-group-item {
+    background: none;
+    border: none;
   }
+  .list-group-item img {
+    margin-right: 0.7rem;
+  }
+  .list-group h4 {
+    padding-left: 3.4rem;
+    font-family: 'gilroylight';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;  
+  } 
 
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
@@ -77,27 +171,13 @@ h1.cta {
   }
 
   .mask  {
-    -webkit-mask-image:url(/assets/img/mask.png);
+    -webkit-mask-image:url(/assets/img/mask2.png);
     -webkit-mask-position:center center;
     -webkit-mask-repeat:no-repeat;
-    -webkit-mask-size:cover;
+    mask-size: 400px 350px;
   
-    mask-image:url(/assets/img/mask.png);
-    mask-position:center center;
+    mask-image:url(/assets/img/mask2.png);
+    mask-position:left center;
     mask-repeat:no-repeat;
-    mask-size:cover;
-}
-.masking {
-    mask-image: url(/assets/img/mask.png);
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-mode: alpha;
-   -webkit-mask-image: url(/assets/img/mask.png);
-   -webkit-mask-position: center;
-   -webkit-mask-repeat: no-repeat;
-   -webkit-mask-mode: alpha;
-   width: 475px;
-   height: 720px;
-   object-fit: cover;
-   }}
+    mask-size: 400px 350px;
 }
